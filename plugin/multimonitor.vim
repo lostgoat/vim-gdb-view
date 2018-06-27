@@ -26,6 +26,7 @@ function! GdbViewClose()
         echom "No debug session open"
     else
         :call TermDebugSendCommand('quit')
+        :sleep 100m
         :tabclose
         let s:is_gdb_open = 0
     endif
