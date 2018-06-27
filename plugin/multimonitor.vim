@@ -14,8 +14,10 @@ function! GdbViewOpen()
         echom "Debug session already open"
     else
         :tabedit %
-        :vsplit
         :Termdebug
+        :Source
+        :wincmd L
+        :Gdb
         let s:is_gdb_open = 1
     endif
 endfunc
