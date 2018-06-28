@@ -43,6 +43,6 @@ function! GdbViewToggle()
     endif
 endfunc
 
-command GdbViewOpen :call GdbViewOpen()
-command GdbViewClose :call GdbViewClose()
-command GdbViewToggle :call GdbViewToggle()
+command! GdbViewOpen :call GdbViewOpen()
+command! GdbViewClose :call GdbViewClose()
+command! GdbViewToggle :call GdbViewToggle()
